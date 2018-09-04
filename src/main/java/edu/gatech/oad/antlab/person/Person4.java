@@ -16,9 +16,7 @@ public class Person4 {
      * name
      * @param pname the person's real name
      */
-  public Person4(String pname) {
-    name = pname;
-  }
+  public Person4(String pname) { name = pname; }
     /**
      * This method should return a string
      * where each character is 1 greater 
@@ -31,6 +29,20 @@ public class Person4 {
      */
     private String calc(String input) {
       //Person 4 put your implementation here
+      String s = "";
+      for(int i = 0; i < input.length(); i++) {
+        //edge case: given max ascii value
+        //set to min ascii string value
+        char a = input.charAt(i);
+        if(a == '~') {
+          a = ' ';
+        }
+        else {
+          a += 1;
+        }
+        s += a;
+      }
+
       return null;
     }
     
